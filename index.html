@@ -66,11 +66,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .mocks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
 .mocks img{display:block;width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;background:rgba(248,244,233,.12)}
 .cta{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;background:var(--creme);color:var(--marrom-escuro);border-radius:12px;padding:14px 16px;font-weight:500;font-size:14px;margin-top:4px}
+.cta-t{white-space:nowrap;font-size:clamp(12.5px,3.6vw,14px)}
 .cta span:last-child{color:var(--caramelo);font-size:18px;line-height:1}
 
 .clientes .wrap{padding-block:34px 4px;display:flex;flex-direction:column;gap:6px}
-.clientes .eyebrow{color:var(--marrom)}
-.clientes h2{font-size:19px;font-weight:500;margin:0 0 10px;max-width:24ch;line-height:1.35;text-wrap:balance}
+.clientes .eyebrow{color:var(--marrom);text-align:center}
+.clientes h2{font-size:19px;font-weight:500;margin:0 auto 10px;text-align:center;max-width:24ch;line-height:1.35;text-wrap:balance}
 .carrossel{position:relative}
 .trilho{list-style:none;margin:0;padding:0;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;border-radius:14px}
 .trilho::-webkit-scrollbar{display:none}
@@ -136,7 +137,7 @@ footer p{margin:0;font-size:12px;color:var(--tinta-suave);max-width:34ch;text-wr
         <img src="img/mock-caixa.jpg" alt="Caixa e sacola personalizadas para entrega ao paciente" loading="lazy" decoding="async">
         <img src="img/mock-receituario.jpg" alt="Receituário personalizado" loading="lazy" decoding="async">
       </div>
-      <a class="cta" href="https://wa.me/5518981681212?text=Ol%C3%A1%21%20Quero%20renovar%20a%20papelaria%20do%20meu%20consult%C3%B3rio." target="_blank" rel="noopener"><span>Conversar sobre minha nova papelaria</span><span aria-hidden="true">→</span></a>
+      <a class="cta" href="https://wa.me/5518981681212?text=Ol%C3%A1%21%20Quero%20renovar%20a%20papelaria%20do%20meu%20consult%C3%B3rio." target="_blank" rel="noopener"><span class="cta-t">Conversar sobre nova papelaria</span><span aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
